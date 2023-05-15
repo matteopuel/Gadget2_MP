@@ -1,0 +1,1068 @@
+
+This is Gadget, version `2.0'.
+
+Running on 2 processors.
+
+found 8 times in output-list.
+
+Allocated 100 MByte communication buffer per processor.
+
+Communication buffer has room for 1139756 particles in gravity computation
+Communication buffer has room for 436906 particles in density computation
+Communication buffer has room for 344926 particles in hydro computation
+Communication buffer has room for 504123 particles in annihilation/scattering
+Communication buffer has room for 354248 particles in domain decomposition
+
+
+Hubble (internal units) = 0.1
+G (internal units) = 43007.1
+UnitMass_in_g = 1.989e+43 
+UnitTime_in_s = 3.08568e+16 
+UnitVelocity_in_cm_per_s = 100000 
+UnitDensity_in_cgs = 6.76991e-22 
+UnitEnergy_in_cgs = 1.989e+53 
+
+C (internal units) = 299790
+AnnihilationCrossSectionSwave (internal units) = 20.8898
+
+
+Allocated 60.5106 MByte for particle storage. 120
+
+
+reading file `./analysis/test1/uniformcubebkg_test' on task=0 (contains 705000 particles.)
+distributing this file to tasks 0-1
+Type 0 (gas):          0  (tot=     0000000000) masstab=0
+Type 1 (halo):    705000  (tot=     0000705000) masstab=9.57407e-06
+Type 2 (disk):         0  (tot=     0000000000) masstab=0
+Type 3 (bulge):        0  (tot=     0000000000) masstab=0
+Type 4 (stars):        0  (tot=     0000000000) masstab=0
+Type 5 (bndry):        0  (tot=     0000000000) masstab=0
+
+reading done.
+Total number of particles :  0000705000
+
+allocated 0.0762939 Mbyte for ngb search.
+
+Allocated 49.9784 MByte for BH-tree. 112
+
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.01723   memory-balance=1.01723
+exchange of 0000294704 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Begin Ngb-tree construction.
+Ngb-Tree contruction finished 
+
+Setting next time for snapshot file to Time_next= 9.9875e-06
+
+
+Begin Step 0, Time: 0, Systemstep: 0
+--> Annihilations: 0, total: 0
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.01723   memory-balance=1.01723
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000705000 particles.
+
+writing snapshot file... 
+done with snapshot.
+
+Setting next time for snapshot file to Time_next= 0.5
+
+
+Begin Step 1, Time: 0.0546875, Systemstep: 0.0546875
+--> Annihilations: 0, total: 0
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00003   memory-balance=1.00003
+exchange of 0000019244 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000705000 particles.
+
+Begin Step 2, Time: 0.109375, Systemstep: 0.0546875
+--> Annihilations: 16, total: 16
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00394   memory-balance=1.37929
+exchange of 0000146194 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000704968 particles.
+
+Begin Step 3, Time: 0.164062, Systemstep: 0.0546875
+--> Annihilations: 31, total: 47
+domain decomposition... 
+NTopleaves= 169
+work-load balance=1.14675   memory-balance=1.46334
+exchange of 0000040706 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000704906 particles.
+
+Begin Step 4, Time: 0.21875, Systemstep: 0.0546875
+--> Annihilations: 50, total: 97
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.2359   memory-balance=1.467
+exchange of 0000012246 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000704806 particles.
+
+Begin Step 5, Time: 0.273438, Systemstep: 0.0546875
+--> Annihilations: 66, total: 163
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.26306   memory-balance=1.45599
+exchange of 0000006885 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000704674 particles.
+
+Begin Step 6, Time: 0.328125, Systemstep: 0.0546875
+--> Annihilations: 81, total: 244
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.20857   memory-balance=1.4451
+exchange of 0000006963 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000704512 particles.
+
+Begin Step 7, Time: 0.382812, Systemstep: 0.0546875
+--> Annihilations: 93, total: 337
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.06502   memory-balance=1.4643
+exchange of 0000021033 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000704326 particles.
+
+Begin Step 8, Time: 0.4375, Systemstep: 0.0546875
+--> Annihilations: 87, total: 424
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.18135   memory-balance=1.46978
+exchange of 0000017781 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000704152 particles.
+
+Begin Step 9, Time: 0.492188, Systemstep: 0.0546875
+--> Annihilations: 116, total: 540
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.25533   memory-balance=1.46772
+exchange of 0000013734 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000703920 particles.
+
+writing snapshot file... 
+done with snapshot.
+
+Setting next time for snapshot file to Time_next= 1
+
+
+Begin Step 10, Time: 0.546875, Systemstep: 0.0546875
+--> Annihilations: 152, total: 692
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.25994   memory-balance=1.46705
+exchange of 0000012931 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000703616 particles.
+
+Begin Step 11, Time: 0.601562, Systemstep: 0.0546875
+--> Annihilations: 151, total: 843
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.19678   memory-balance=1.46565
+exchange of 0000011068 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000703314 particles.
+
+Begin Step 12, Time: 0.65625, Systemstep: 0.0546875
+--> Annihilations: 162, total: 1005
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.19989   memory-balance=1.45056
+exchange of 0000006546 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000702990 particles.
+
+Begin Step 13, Time: 0.710938, Systemstep: 0.0546875
+--> Annihilations: 177, total: 1182
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.10313   memory-balance=1.45957
+exchange of 0000012956 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000702636 particles.
+
+Begin Step 14, Time: 0.765625, Systemstep: 0.0546875
+--> Annihilations: 214, total: 1396
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.02573   memory-balance=1.4637
+exchange of 0000011689 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000702208 particles.
+
+Begin Step 15, Time: 0.820312, Systemstep: 0.0546875
+--> Annihilations: 197, total: 1593
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00811   memory-balance=1.457
+exchange of 0000007966 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000701814 particles.
+
+Begin Step 16, Time: 0.875, Systemstep: 0.0546875
+--> Annihilations: 197, total: 1790
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.01066   memory-balance=1.45617
+exchange of 0000007899 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000701420 particles.
+
+Begin Step 17, Time: 0.929688, Systemstep: 0.0546875
+--> Annihilations: 228, total: 2018
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00251   memory-balance=1.44415
+exchange of 0000004237 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000700964 particles.
+
+Begin Step 18, Time: 0.984375, Systemstep: 0.0546875
+--> Annihilations: 247, total: 2265
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00356   memory-balance=1.43282
+exchange of 0000003994 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000700470 particles.
+
+writing snapshot file... 
+done with snapshot.
+
+Setting next time for snapshot file to Time_next= 1.5
+
+
+Begin Step 19, Time: 1.03906, Systemstep: 0.0546875
+--> Annihilations: 275, total: 2540
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00278   memory-balance=1.43675
+exchange of 0000002641 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000699920 particles.
+
+Begin Step 20, Time: 1.09375, Systemstep: 0.0546875
+--> Annihilations: 262, total: 2802
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.0011   memory-balance=1.4441
+exchange of 0000002592 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000699396 particles.
+
+Begin Step 21, Time: 1.14844, Systemstep: 0.0546875
+--> Annihilations: 268, total: 3070
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.02022   memory-balance=1.45119
+exchange of 0000002499 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000698860 particles.
+
+Begin Step 22, Time: 1.20312, Systemstep: 0.0546875
+--> Annihilations: 251, total: 3321
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00269   memory-balance=1.44686
+exchange of 0000006872 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000698358 particles.
+
+Begin Step 23, Time: 1.25781, Systemstep: 0.0546875
+--> Annihilations: 266, total: 3587
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.01117   memory-balance=1.45468
+exchange of 0000002758 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000697826 particles.
+
+Begin Step 24, Time: 1.3125, Systemstep: 0.0546875
+--> Annihilations: 239, total: 3826
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.0201   memory-balance=1.4507
+exchange of 0000006597 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000697348 particles.
+
+Begin Step 25, Time: 1.36719, Systemstep: 0.0546875
+--> Annihilations: 257, total: 4083
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00268   memory-balance=1.45803
+exchange of 0000002584 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000696834 particles.
+
+Begin Step 26, Time: 1.42188, Systemstep: 0.0546875
+--> Annihilations: 250, total: 4333
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.01268   memory-balance=1.45262
+exchange of 0000006989 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000696334 particles.
+
+Begin Step 27, Time: 1.47656, Systemstep: 0.0546875
+--> Annihilations: 264, total: 4597
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.01024   memory-balance=1.4606
+exchange of 0000002815 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000695806 particles.
+
+writing snapshot file... 
+done with snapshot.
+
+Setting next time for snapshot file to Time_next= 2
+
+
+Begin Step 28, Time: 1.53125, Systemstep: 0.0546875
+--> Annihilations: 283, total: 4880
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00514   memory-balance=1.45666
+exchange of 0000006837 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000695240 particles.
+
+Begin Step 29, Time: 1.58594, Systemstep: 0.0546875
+--> Annihilations: 257, total: 5137
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.0031   memory-balance=1.45286
+exchange of 0000006561 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000694726 particles.
+
+Begin Step 30, Time: 1.64062, Systemstep: 0.0546875
+--> Annihilations: 214, total: 5351
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.01363   memory-balance=1.44865
+exchange of 0000006477 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000694298 particles.
+
+Begin Step 31, Time: 1.69531, Systemstep: 0.0546875
+--> Annihilations: 231, total: 5582
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00823   memory-balance=1.44498
+exchange of 0000006468 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000693836 particles.
+
+Begin Step 32, Time: 1.75, Systemstep: 0.0546875
+--> Annihilations: 240, total: 5822
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00497   memory-balance=1.4417
+exchange of 0000006508 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000693356 particles.
+
+Begin Step 33, Time: 1.80469, Systemstep: 0.0546875
+--> Annihilations: 270, total: 6092
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00592   memory-balance=1.41748
+exchange of 0000013791 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000692816 particles.
+
+Begin Step 34, Time: 1.85938, Systemstep: 0.0546875
+--> Annihilations: 256, total: 6348
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.0033   memory-balance=1.40068
+exchange of 0000011715 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000692304 particles.
+
+Begin Step 35, Time: 1.91406, Systemstep: 0.0546875
+--> Annihilations: 271, total: 6619
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00907   memory-balance=1.39839
+exchange of 0000007394 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000691762 particles.
+
+Begin Step 36, Time: 1.96875, Systemstep: 0.0546875
+--> Annihilations: 272, total: 6891
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00494   memory-balance=1.38481
+exchange of 0000011348 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000691218 particles.
+
+writing snapshot file... 
+done with snapshot.
+
+Setting next time for snapshot file to Time_next= 2.5
+
+
+Begin Step 37, Time: 2.02344, Systemstep: 0.0546875
+--> Annihilations: 243, total: 7134
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00393   memory-balance=1.36844
+exchange of 0000009172 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000690732 particles.
+
+Begin Step 38, Time: 2.07812, Systemstep: 0.0546875
+--> Annihilations: 237, total: 7371
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00598   memory-balance=1.34642
+exchange of 0000008134 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000690258 particles.
+
+Begin Step 39, Time: 2.13281, Systemstep: 0.0546875
+--> Annihilations: 199, total: 7570
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00793   memory-balance=1.32421
+exchange of 0000008230 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000689860 particles.
+
+Begin Step 40, Time: 2.1875, Systemstep: 0.0546875
+--> Annihilations: 217, total: 7787
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00564   memory-balance=1.2871
+exchange of 0000013080 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000689426 particles.
+
+Begin Step 41, Time: 2.24219, Systemstep: 0.0546875
+--> Annihilations: 212, total: 7999
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00174   memory-balance=1.26876
+exchange of 0000006465 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000689002 particles.
+
+Begin Step 42, Time: 2.29688, Systemstep: 0.0546875
+--> Annihilations: 189, total: 8188
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00488   memory-balance=1.25107
+exchange of 0000006237 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000688624 particles.
+
+Begin Step 43, Time: 2.35156, Systemstep: 0.0546875
+--> Annihilations: 194, total: 8382
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00453   memory-balance=1.23301
+exchange of 0000006367 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000688236 particles.
+
+Begin Step 44, Time: 2.40625, Systemstep: 0.0546875
+--> Annihilations: 159, total: 8541
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00293   memory-balance=1.22789
+exchange of 0000010262 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000687918 particles.
+
+Begin Step 45, Time: 2.46094, Systemstep: 0.0546875
+--> Annihilations: 147, total: 8688
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00402   memory-balance=1.20944
+exchange of 0000006503 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000687624 particles.
+
+writing snapshot file... 
+done with snapshot.
+
+Setting next time for snapshot file to Time_next= 3
+
+
+Begin Step 46, Time: 2.51562, Systemstep: 0.0546875
+--> Annihilations: 130, total: 8818
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.01043   memory-balance=1.19105
+exchange of 0000006482 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000687364 particles.
+
+Begin Step 47, Time: 2.57031, Systemstep: 0.0546875
+--> Annihilations: 137, total: 8955
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00469   memory-balance=1.18995
+exchange of 0000011247 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000687090 particles.
+
+Begin Step 48, Time: 2.625, Systemstep: 0.0546875
+--> Annihilations: 126, total: 9081
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.00198   memory-balance=1.17198
+exchange of 0000006335 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686838 particles.
+
+Begin Step 49, Time: 2.67969, Systemstep: 0.0546875
+--> Annihilations: 89, total: 9170
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.00524   memory-balance=1.17153
+exchange of 0000011691 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686660 particles.
+
+Begin Step 50, Time: 2.73438, Systemstep: 0.0546875
+--> Annihilations: 83, total: 9253
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.00378   memory-balance=1.15369
+exchange of 0000006525 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686494 particles.
+
+Begin Step 51, Time: 2.78906, Systemstep: 0.0546875
+--> Annihilations: 70, total: 9323
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.00891   memory-balance=1.16322
+exchange of 0000015880 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686354 particles.
+
+Begin Step 52, Time: 2.84375, Systemstep: 0.0546875
+--> Annihilations: 60, total: 9383
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.00533   memory-balance=1.14437
+exchange of 0000007262 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686234 particles.
+
+Begin Step 53, Time: 2.89844, Systemstep: 0.0546875
+--> Annihilations: 49, total: 9432
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.02141   memory-balance=1.12579
+exchange of 0000007272 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686136 particles.
+
+Begin Step 54, Time: 2.95312, Systemstep: 0.0546875
+--> Annihilations: 19, total: 9451
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.01005   memory-balance=1.14355
+exchange of 0000019523 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686098 particles.
+
+writing snapshot file... 
+done with snapshot.
+
+Setting next time for snapshot file to Time_next= 3.5
+
+
+Begin Step 55, Time: 3.00781, Systemstep: 0.0546875
+--> Annihilations: 11, total: 9462
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.00856   memory-balance=1.12693
+exchange of 0000008018 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+Begin Step 56, Time: 3.0625, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462
+domain decomposition... 
+NTopleaves= 148
+work-load balance=1.02769   memory-balance=1.11022
+exchange of 0000008073 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+Begin Step 57, Time: 3.11719, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462
+domain decomposition... 
+NTopleaves= 162
+work-load balance=1.01205   memory-balance=1.13613
+exchange of 0000020629 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+Begin Step 58, Time: 3.17188, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00021   memory-balance=1.12156
+exchange of 0000006296 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+Begin Step 59, Time: 3.22656, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462
+domain decomposition... 
+NTopleaves= 176
+work-load balance=1.00179   memory-balance=1.12386
+exchange of 0000011172 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+Begin Step 60, Time: 3.28125, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462
+domain decomposition... 
+NTopleaves= 232
+work-load balance=1.00063   memory-balance=1.1359
+exchange of 0000014644 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+Begin Step 61, Time: 3.33594, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462
+domain decomposition... 
+NTopleaves= 274
+work-load balance=1.00254   memory-balance=1.14317
+exchange of 0000013193 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+Begin Step 62, Time: 3.39062, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462
+domain decomposition... 
+NTopleaves= 288
+work-load balance=1.00444   memory-balance=1.14093
+exchange of 0000010116 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+Begin Step 63, Time: 3.44531, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462
+domain decomposition... 
+NTopleaves= 288
+work-load balance=1.00021   memory-balance=1.13271
+exchange of 0000007849 particles
+domain decomposition done. 
+begin Peano-Hilbert order...
+Peano-Hilbert done.
+Start force computation...
+Tree construction.
+Tree construction done.
+force computation done.
+ngb iteration 1: need to repeat for 0000686076 particles.
+
+writing snapshot file... 
+done with snapshot.
+
+There is no valid time for a further snapshot file.
+
+Begin Step 64, Time: 3.5, Systemstep: 0.0546875
+--> Annihilations: 0, total: 9462

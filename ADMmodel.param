@@ -1,0 +1,179 @@
+%  Relevant files
+
+InitCondFile  	   ./PREFLIGHT/ics_15Mpc_128part_z45_kmax45
+OutputDir          out/
+
+EnergyFile         energy.txt
+InfoFile           info.txt
+TimingsFile        timings.txt
+CpuFile            cpu.txt
+
+RestartFile        rst
+SnapshotFileBase   snp
+
+
+% CPU time -limit
+
+TimeLimitCPU      86400  % = 24 hours
+ResubmitOn        0
+ResubmitCommand   ./autoresubmit.sh  
+
+
+% Code options
+
+
+ICFormat                 1
+SnapFormat               1
+
+ComovingIntegrationOn    1
+
+TypeOfTimestepCriterion  0
+
+OutputListOn             1
+OutputListFilename PREFLIGHT/snap_output_times.txt
+
+PeriodicBoundariesOn     1
+
+
+%  Caracteristics of run (if ComovingIntegration = 0, TimeBegin real = value(TimeBegin) * 0.979 Gyr if UnitLength = 1 kpc; if 1 Mpc, * 979 Gyr)
+
+TimeBegin           0.0222222222222  % z=45, Begin of the simulation
+TimeMax	            1.0        % End of the simulation
+
+Omega0	            0.31582309   % total matter density % 0.3158
+OmegaLambda         0.684176909	% 0.6842
+OmegaBaryon         0.049386824	% 0.04939
+HubbleParam         0.6732117   % only needed for cooling (and ADM model)
+
+BoxSize               15.0		% Mpc/h, units depend on UnitLength
+
+% Output frequency
+
+TimeBetSnapshot        1.001	% 1.001
+TimeOfFirstSnapshot    0.0222222222222 % corresponds to TimeBegin
+
+CpuTimeBetRestartFile     21600  % every 6 hours
+TimeBetStatistics         0.05	% 0.02
+
+MaxRMSDisplacementFac 	0.2 % 0.25
+
+NumFilesPerSnapshot       1
+NumFilesWrittenInParallel 1		% number of files that are simultaneously written (i.e. restart/snapshot files)
+
+
+
+% Accuracy of time integration
+
+ErrTolIntAccuracy      0.025 	% ok!
+
+CourantFac             0.15     
+
+MaxSizeTimestep       0.01  	% 0.025
+MinSizeTimestep       1.0e-10	% 1.0e-10
+
+
+
+
+% Tree algorithm, force accuracy, domain update frequency
+
+ErrTolTheta            0.5    % 0.6        
+TypeOfOpeningCriterion 1
+ErrTolForceAcc         0.005	% optimal for 128^3 particles (0.0003 for 256^3), it was 0.005
+
+
+TreeDomainUpdateFrequency    0.1	% 0.005
+
+
+%  Further parameters of SPH
+
+DesNumNgb              50
+MaxNumNgbDeviation     2
+ArtBulkViscConst       0.8
+InitGasTemp            0          % always ignored if set to 0 
+MinGasTemp             0    
+
+
+% Memory allocation
+
+PartAllocFactor       1.5
+TreeAllocFactor       0.8
+BufferSize            100	% 25          % in MByte
+
+
+% System of units
+
+UnitLength_in_cm         3.085678e24        ;  1.0 Mpc 
+UnitMass_in_g            1.989e43           ;  1.0e10 solar masses 
+UnitVelocity_in_cm_per_s 1e5                ;  1 km/sec 
+GravityConstantInternal  0
+ 
+
+% Softening lengths
+
+MinGasHsmlFractional 0.25	% minimum gas smoothing in terms of the gravitational softening length
+
+SofteningGas       0
+SofteningHalo      0.00234375 % it was 0.01562496 equivalent to 15.6 kpc
+SofteningDisk      0 % 0.01562496
+SofteningBulge     0           
+SofteningStars     0
+SofteningBndry     0
+
+SofteningGasMaxPhys       0
+SofteningHaloMaxPhys      0.0005859375 % it was 0.004 equivalent to 4 kpc
+SofteningDiskMaxPhys      0 % 0.004
+SofteningBulgeMaxPhys     0           
+SofteningStarsMaxPhys     0
+SofteningBndryMaxPhys     0
+
+
+
+%% MPUEL: add ADM model parameters
+
+% Vector or Scalar mediator model
+MediatorDMmassratio		0.3		% w = m_V / m_DM
+VectorOrScalarCoupling			0.02	% alpha_D
+
+% Oscillation
+MajoranaMass		1.0e-31		% delta_m in eV/c^2
+
+% Annihilation
+AnnihilationCrossSectionSwave		82.287623394	% cm^2/g km/s
+AnnihilateSearchRadius  			0.00234375 		% 0.01562496
+AnnihilateSearchRadiusMaxPhys 		0.0005859375 	% 0.004
+
+% Scattering
+ScatteringCrossSection			0.135546650091	% cm^2/g
+ScatterSearchRadius  			0.00234375 		% 0.01562496
+ScatterSearchRadiusMaxPhys 		0.0005859375 	% 0.004
+%
+%%%ThetaTableFilename  /.../theta_tables_2D/yukawa_w1_th.txt
+%%%CrossSectionTableFilename /.../theta_tables_2D/yukawa_w1_cs.txt
+%%%Nv 		1000
+%%%Ntheta 		1000
+%%%vmin 	0.560 % to get w=560 km/s, with w=1 in CrossSection and Theta files
+%%%vmax 	560000
+
+ProbabilityTol    0.2 	% 0.2 (Rocha), to avoid multiple scattering in each timestep (in principle it should be at most 1.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
