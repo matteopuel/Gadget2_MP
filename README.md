@@ -1,61 +1,31 @@
 ### GADGET-2 code with Oscillating ADM model (for ligth scalar and vector mediators). 
 
-This code is based on GADGET-2, written by Volker Springel (https://wwwmpa.mpa-garching.mpg.de/gadget/). Please cite the initial paper if using this file.
+Code used in:
 
-Author of modifications: Matteo Puel @2020
+Cline, J. M., Gambini, G., McDermott S. D., Puel, M., *Late-Time Dark Matter Oscillations and the Core-Cusp Problem*, J. High Energ. Phys. 2021, 223 (2021), https://doi.org/10.1007/JHEP04(2021)223
 
-Description of the new Makefile options:
+and based on GADGET-2, written by Volker Springel (https://wwwmpa.mpa-garching.mpg.de/gadget/). Please cite the initial paper, bseides the reference above, if using this code.
 
-  ADM_MODEL_ON
-  |  Master flag to allow to turn on our model properties.
-  |
-  +---- VECTOR_MEDIATOR
-  |		  Massive light vector mediator interaction. It includes the
-  |		  Sommerfeld enhancement factor for s-wave annihilation
-  |
-  +---- SCALAR_MEDIATOR
-  |       Massive light scalar mediator interaction. It includes the
-  |       Sommerfeld enhancement factor for s-wave annihilation
-  |
-  +---- OSCILLATION_DM
-  |       Activate oscillations
-  |
-  +---- ANNIHILATION_DM
-  |		  Activate annihilations (just s-wave cross section). 
-  |		  It requires oscillation probability for Dirac DM. 
-  |
-  +---- SCATTERING_DM
-  |       Activate scatterings. Standard is the viscosity cross section 
-  |		  with isotropic scattering
-  |	  +---- TRANSFER_CROSS_SECTION
-  |			  Replace the viscosity cross section with the original 
-  |			  transfer cross section. Still isotropic scattering
-  |	  +---- MODIFIED_TRANSFER_CROSS_SECTION
-  |			  Replace the viscosity cross section with the modified
-  |			  transfer cross section. Still isotropic scattering
-  |	  +---- VELOCITY_ANGULAR_DEPENDENT_CROSS_SECTION
-  |			  Polar angle and cross section values stored in tables
-  |			  given in input. Anisotropic scattering
-  |	  +---- LATE_TIME_PHASE_CHANGE
-  |			  Add random phase of scattered particles 
-  |			  if cosmic time > 1/MajoranaMass
-  |   +---- OUTPUTDT_SCATTER
-  |           Include the current dt_scatter variable of all particles
-  |           in the snapshot files (similar to OUTPUTTIMESTEP). 
-  |			  dt_scatter is also read from the snapshot if simulation
-  |			  has RestartFlag == 2
-  |
-  +---- TEST_UNIFORM_BKG
-  |       Test 1: scattering of cube to uniform background
-  |       (no gravity, just one scattering per each particle)
-  |
-  +---- TEST_HERNQUIST_HALO_SCATT
-  |       Test 2: scattering in an isolated Hernquist halo
-  |       (no change in the particle velocity)
-  |
-  +---- TEST_HERNQUIST_HALO_ANN
-  |       Test 2: scattering in an isolated Hernquist halo
-  |       (no remove annihilated particles)
+Author of modifications: Matteo Puel
+Year: 2020
+
+
+The compilation file is **Makefile**, which is the same as in GADGET-2 (see corresponding manual). New parameters have been added and here below we provide a description.
+
+ADM_MODEL_ON : Master flag to allow to turn on our model properties.
+- VECTOR_MEDIATOR : Massive light vector mediator interaction. It includes the Sommerfeld enhancement factor for s-wave annihilation
+- SCALAR_MEDIATOR : Massive light scalar mediator interaction. It includes the Sommerfeld enhancement factor for s-wave annihilation
+- OSCILLATION_DM : Activate oscillations
+- ANNIHILATION_DM : Activate annihilations (just s-wave cross section). It requires oscillation probability for Dirac DM. 
+- SCATTERING_DM : Activate scatterings. Standard is the viscosity cross section with isotropic scattering
+-- TRANSFER_CROSS_SECTION : Replace the viscosity cross section with the original transfer cross section. Still isotropic scattering
+-- MODIFIED_TRANSFER_CROSS_SECTION : Replace the viscosity cross section with the modified transfer cross section. Still isotropic scattering
+-- VELOCITY_ANGULAR_DEPENDENT_CROSS_SECTION : Polar angle and cross section values stored in tables given in input. Anisotropic scattering
+-- LATE_TIME_PHASE_CHANGE : Add random phase of scattered particles if cosmic time > 1/MajoranaMass
+--- OUTPUTDT_SCATTER : Include the current dt_scatter variable of all particles in the snapshot files (similar to OUTPUTTIMESTEP). dt_scatter is also read from the snapshot if simulation has RestartFlag == 2
+- TEST_UNIFORM_BKG : Test 1: scattering of cube to uniform background (no gravity, just one scattering per each particle)
+- TEST_HERNQUIST_HALO_SCATT : Test 2: scattering in an isolated Hernquist halo (no change in the particle velocity)
+- TEST_HERNQUIST_HALO_ANN : Test 2: scattering in an isolated Hernquist halo (no remove annihilated particles)
 
 
 Additional paramterfile options:
