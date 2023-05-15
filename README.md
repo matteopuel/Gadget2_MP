@@ -1,4 +1,8 @@
-GADGET-2 code with Oscillating ADM model (for ligth scalar and vector mediators). (Author: MPUEL)
+### GADGET-2 code with Oscillating ADM model (for ligth scalar and vector mediators). 
+
+This code is based on GADGET-2, written by Volker Springel (https://wwwmpa.mpa-garching.mpg.de/gadget/). Please cite the initial paper if using this file.
+
+Author of modifications: Matteo Puel @2020
 
 Description of the new Makefile options:
 
