@@ -6,8 +6,7 @@ Cline, J. M., Gambini, G., McDermott S. D., Puel, M., *Late-Time Dark Matter Osc
 
 and based on GADGET-2, written by Volker Springel (https://wwwmpa.mpa-garching.mpg.de/gadget/). Please cite the initial paper, bseides the reference above, if using this code.
 
-Author of modifications: Matteo Puel
-Year: 2020
+Author of modifications: Matteo Puel @2020
 
 
 ## Compilation 
