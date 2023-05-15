@@ -1,4 +1,4 @@
-### GADGET-2 code with Oscillating ADM model (for ligth scalar and vector mediators). 
+### GADGET-2 code with Oscillating ADM model (for ligth scalar and vector mediators) 
 
 Code used in:
 
@@ -10,6 +10,7 @@ Author of modifications: Matteo Puel
 Year: 2020
 
 
+## Compilation 
 The compilation file is **Makefile**, which is the same as in GADGET-2 (see corresponding manual). New parameters have been added and here below we provide a description.
 
 ADM_MODEL_ON : Master flag to allow to turn on our model properties.
@@ -45,4 +46,19 @@ Additional paramterfile options:
 - vmin : The minumum velocity (in km/s) at which the cross-section is defined. For velocities v<vmin, the cross-section is set equal to its value at vmin (only for VELOCITY_ANGULAR_DEPENDENT_CROSS_SECTION)
 - vmax : The maximum velocity (in km/s) at which the cross-section is defined. For velocities v>vmax, the cross-section is set to 0 (only for VELOCITY_ANGULAR_DEPENDENT_CROSS_SECTION)
 - ProbabilityTol : Maximum probability of scattering, used to introduce a DM scattering limiter (not for annihilation because the two annihilating particles disappear)
+
+## Bibtex
+@article{Cline:2020gon,
+    author = "Cline, James M. and Gambini, Guillermo and Mcdermott, Samuel D. and Puel, Matteo",
+    title = "{Late-Time Dark Matter Oscillations and the Core-Cusp Problem}",
+    eprint = "2010.12583",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ph",
+    reportNumber = "FNAL-PUB-20-556-T, FERMILAB-PUB-20-556-T",
+    doi = "10.1007/JHEP04(2021)223",
+    journal = "JHEP",
+    volume = "04",
+    pages = "223",
+    year = "2021"
+}
 
