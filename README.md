@@ -18,7 +18,7 @@ ADM_MODEL_ON : Master flag to allow to turn on our model properties.
 - OSCILLATION_DM : Activate oscillations
 - ANNIHILATION_DM : Activate annihilations (just s-wave cross section). It requires oscillation probability for Dirac DM. 
 - SCATTERING_DM : Activate scatterings. Standard is the viscosity cross section with isotropic scattering
--- TRANSFER_CROSS_SECTION : Replace the viscosity cross section with the original transfer cross section. Still isotropic scattering
+  -TRANSFER_CROSS_SECTION : Replace the viscosity cross section with the original transfer cross section. Still isotropic scattering
 -- MODIFIED_TRANSFER_CROSS_SECTION : Replace the viscosity cross section with the modified transfer cross section. Still isotropic scattering
 -- VELOCITY_ANGULAR_DEPENDENT_CROSS_SECTION : Polar angle and cross section values stored in tables given in input. Anisotropic scattering
 -- LATE_TIME_PHASE_CHANGE : Add random phase of scattered particles if cosmic time > 1/MajoranaMass
